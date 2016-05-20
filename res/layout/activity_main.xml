@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg2"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/toplogo" />
+
+        <ListView
+            android:id="@+id/left_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:divider="#00000000"
+            android:dividerHeight="20dp"
+            android:listSelector="@drawable/list_mu_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="7"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" >
+
+            <Button
+                android:id="@+id/app_bt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/search_bt_selector" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/app_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="540dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="50dp"
+            android:horizontalSpacing="20dp"
+            android:listSelector="#00000000"
+            android:numColumns="5"
+            android:verticalSpacing="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

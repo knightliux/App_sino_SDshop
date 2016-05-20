@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="550dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal"
+        android:paddingTop="50dp" >
+
+        <!-- Left -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:background="@drawable/appinfo_detail"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/appinfo_logo"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop" />
+                <!-- appsize and ver -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                               
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_size"
+                                android:textSize="@dimen/appinfo_textsize" />
+
+                            <TextView
+                                android:id="@+id/appinfo_size"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/appinfo_textsize" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_ver"
+                                android:textSize="@dimen/appinfo_textsize" />
+
+                            <TextView
+                                android:id="@+id/appinfo_ver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/appinfo_textsize" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- appsize and ver -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_update"
+                    android:textSize="@dimen/appinfo_textsize" />
+
+                <TextView
+                    android:id="@+id/appinfo_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/appinfo_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" >
+
+                <ProgressBar
+                    android:id="@+id/appinfo_progreesbar"
+                    style="@style/StyleProgressBarMini"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_progressbar_bg"
+                    android:max="100"
+                    android:progress="0"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/appinfo_btgrop_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/appinfo_bt_down"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/search_key_selector"
+                    android:text="@string/app_down"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/appinfo_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/appinfo_btgrop_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/appinfo_bt_open"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/search_key_selector"
+                    android:text="@string/app_open"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/appinfo_textsize" />
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/appinfo_bt_updata"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/search_key_selector"
+                    android:text="@string/app_up"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/appinfo_textsize" />
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/appinfo_bt_uninstall"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/search_key_selector"
+                    android:text="@string/app_uninstall"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/appinfo_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- OVER Left -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:background="@drawable/appinfo_detail"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/appinfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/appinfo_name" />
+
+            <TextView
+                android:id="@+id/appinfo_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/appinfo_textsize" />
+
+            <ImageView
+                android:id="@+id/appinfo_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SD APP Store</string>
+    <string name="app_size">Size :</string>
+    <string name="app_ver">Ver :</string>
+    <string name="app_update">UpDate :</string>
+    <string name="app_down">DOWNLOAD</string>
+    <string name="app_up">UP</string>
+    <string name="app_open">OPEN</string>
+    <string name="app_uninstall">UNINSTALL</string>
+    
+    <string name="search_result">Result :</string>
+    <string name="search_searchbt">Search</string>
+    
+    
+</resources>
